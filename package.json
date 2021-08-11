@@ -1,0 +1,30 @@
+{
+  "name": "first_app",
+  "version": "0.1.0",
+  "description": "Aplicação web para cadastro de usuários",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felipenferreira/first_app.git"
+  },
+  "keywords": [
+    "web",
+    "app",
+    "node",
+    "cadastro",
+    "user",
+    "manager"
+  ],
+  "author": "Felipe Ferreira do Nascimento",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/felipenferreira/first_app/issues"
+  },
+  "homepage": "https://github.com/felipenferreira/first_app#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
