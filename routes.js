@@ -1,5 +1,6 @@
 const express = require("express");
 const router = express.Router();
+const app = express();
 
 /* linhas de código das rotas relacionadas ao faker e à criação do banco de dados, não vão ser usadas AGORA
 
@@ -12,7 +13,6 @@ db.criarDB("minhaBaseDados");
    2. O nome 'public' não precisará ser colocado na rota; 3. Para serem alcançados os arquivos e pastas que estão dentro dele; 
    4. Por isso na imagem que está na página home.ejs só há o indicativo para 'images';
 */
-
 router.use(express.static('public'));
 
 router.get('/',(req,res)=>{
@@ -21,13 +21,6 @@ router.get('/',(req,res)=>{
 });
 
 router.get('/about',(req,res)=>{
-
-    let usuarios=[];
-    //Usando o Faker para criar 6 perfis para colocar no about
-    for(let cont=1;cont<=6;cont++){
-        usuarios.push({name:faker.name.findName(),email: faker.internet.email(),avatar: faker.image.image()});
-    }
-    console.log(usuarios);
     res.render('pages/about',{usuarios});
 });
 
@@ -43,6 +36,9 @@ router.post('/cadastro/remove',(req,res)=>{
     //res.render('pages/insert',{result});
 });
 
+router.get('/cadastro',(req,res)=>{
+    res.render('pages/cadastro');
+});
 
 // Inserir um usuário
 router.get('/cadastro/insert',(req,res)=>{
