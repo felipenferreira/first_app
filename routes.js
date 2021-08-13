@@ -12,6 +12,7 @@ db.criarDB("minhaBaseDados");
    2. O nome 'public' não precisará ser colocado na rota; 3. Para serem alcançados os arquivos e pastas que estão dentro dele; 
    4. Por isso na imagem que está na página home.ejs só há o indicativo para 'images';
 */
+
 router.use(express.static('public'));
 
 router.get('/',(req,res)=>{
