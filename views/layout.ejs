@@ -4,19 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+   
+    
+    <link rel="stylesheet" href="/css/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Open+Sans:ital,wght@0,300;0,700;1,400&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet"> 
     <title>First App</title>
 </head>
 <body>
-    <div class="display-3 text-center bg-secondary" style="margin-bottom:0">
+    <div class="display-4 text-left text-light bg-info " style="margin-bottom:0">
+    <font face="Monoton" color=white>
         First App
+    </font>
     </div>
     <!-- <header>
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -36,10 +57,10 @@
 
     <%- include('pages/header') %>
      
-    <!-- a chjamada para script.js foi colocada aqui para que possa ser vista antes da criacao da tabela presente no arquivo cadastro.ejs. Assim a funcao update() poderá ser considerada declarada antes de chegar no código presente em cadastro.ejs. -->
+    <!-- a chamada para script.js foi colocada aqui para que possa ser vista antes da criacao da tabela presente no arquivo cadastro.ejs. Assim a funcao update() poderá ser considerada declarada antes de chegar no código presente em cadastro.ejs. -->
 
     <main>
-        <div class="container">
+        <div class="container-fluid">
             <%- body %>
         </div>
 
@@ -48,8 +69,8 @@
     <footer>
         <div class="d-flex">
 
-            <div class="p-2 bg-info flex-grow-1 small text-white">
-                <i>Copyleft</i> Wellington W. F. Sarmento - all rights reserved.   Página sob licença <a class="text-light" href="https://www.gnu.org/licenses/gpl-3.0.txt">Gnu Public License version 3.0.</a>
+            <div class="p-1 bg-info text-center flex-grow-1 small text-light">
+                <i>Copyleft</i> Felipe Ferreira - all rights reserved.   Página sob licença <a class="text-light" href="https://www.gnu.org/licenses/gpl-3.0.txt">GNU Public License Version 3.0.</a>
             </div>
         </div>
     </footer>
